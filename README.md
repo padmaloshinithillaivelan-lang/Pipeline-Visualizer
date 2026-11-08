@@ -4,10 +4,10 @@ A simulator that shows how instructions move through a CPU pipeline stage by sta
 
 ## What It Does
 
-- Simulates a [5-stage] CPU pipeline (IF, ID, EX, MEM, WB).
-- Automatically detects data hazards such as **RAW (Read After Write)** [, WAR, WAW].
+- Simulates a 5-stage CPU pipeline (IF, ID, EX, MEM, WB).
+- Automatically detects data hazards such as **RAW (Read After Write)**.
 - Resolves hazards using **forwarding** and/or **stalling** (pipeline bubbles).
-- Displays a cycle-by-cycle pipeline diagram so you can see where each instruction is at every clock cycle.
+- Displays a cycle-by-cycle pipeline diagram showing where each instruction is at every clock cycle.
 
 ## Circuit Diagram
 
@@ -15,39 +15,35 @@ A simulator that shows how instructions move through a CPU pipeline stage by sta
 
 ## Technologies Used
 
-- Language: [Python / Java / JavaScript / C++]
-- Tools: [Logisim / Draw.io / VS Code]
+- Language: C++
+- Tools: [your compiler or IDE, e.g. Code::Blocks / VS Code / Dev-C++]
 
 ## Project Structure
 
 ```
-pipeline-visualizer/
-├── src/          Source code
-├── circuit/      Circuit diagram
-├── report/       Project report (PDF)
-├── screenshots/  Output screenshots
+Pipeline-Visualizer/
+├── SRC.CPP        Source code
+├── CIRC.PNG       Circuit diagram
+├── OP1.PNG        Output screenshot 1
+├── OP2.PNG        Output screenshot 2
+├── OP3.PNG        Output screenshot 3
+├── Project_Report.pdf
 └── README.md
 ```
 
 ## How to Run
 
 1. Download or clone this repository.
-2. Open a terminal in the `src` folder.
-3. Run the program:
-
-**Python:**
-```
-python main.py
-```
-
-**Java:**
-```
-javac Main.java
-java Main
-```
-
-**JavaScript / HTML:**
-Open `index.html` in your browser.
+2. Open a terminal in the project folder.
+3. Compile the program:
+   ```
+   g++ SRC.CPP -o pipeline
+   ```
+4. Run it:
+   ```
+   ./pipeline
+   ```
+   (On Windows, use `pipeline.exe`.)
 
 ## Sample Input
 
@@ -59,16 +55,20 @@ AND R6, R1, R7
 
 ## Sample Output
 
-![Output Screenshot](OP1.PNG)
+![Output 1](OP1.PNG)
 
-(The second instruction depends on R1 from the first, so a RAW hazard is detected and resolved using forwarding or a stall.)
+![Output 2](OP2.PNG)
+
+![Output 3](OP3.PNG)
+
+The second instruction depends on R1 from the first, so a RAW hazard is detected and resolved using forwarding or a stall.
 
 ## Report
 
-The full project report is available here: [Project Report](report/Project_Report.pdf)
+The full project report is available here: [Project Report](Project_Report.pdf)
 
 ## Author
 
-- NAME: T Padma Loshini
-- REG.NO:1250110121195
-- CLASS: II-B.Tech CSE -"B" sec
+- **Name:** T Padma Loshini
+- **Reg. No:** 1250110121195
+- **Class:** II-B.Tech CSE, "B" Section
