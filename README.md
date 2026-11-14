@@ -11,7 +11,7 @@ A simulator that shows how instructions move through a CPU pipeline stage by sta
 
 ## Circuit Diagram
 
-![Pipeline Circuit Diagram](CIRC.PNG)
+![Pipeline Circuit Diagram](
 
 ## Technologies Used
 
@@ -54,12 +54,6 @@ AND R6, R1, R7
 ```
 
 ## Sample Output
-
-![Output 1](OP1.PNG)
-
-![Output 2](OP2.PNG)
-
-![Output 3](OP3.PNG)
 
 The second instruction depends on R1 from the first, so a RAW hazard is detected and resolved using forwarding or a stall.
 
