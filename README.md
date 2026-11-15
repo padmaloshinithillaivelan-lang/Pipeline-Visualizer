@@ -13,7 +13,7 @@ A simulator that shows how instructions move through a CPU pipeline stage by sta
 
 ## Circuit Diagram
 
-![Pipeline Circuit Diagram](Circuit diagram.png)
+[Pipeline Circuit Diagram](Circuitdiagram.png)
 
 ## Output Video
 
