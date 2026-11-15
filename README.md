@@ -1,3 +1,5 @@
+
+
 # Pipeline Visualizer with Automatic Data Hazard Detection and Resolution
 
 A simulator that shows how instructions move through a CPU pipeline stage by stage, and automatically detects and resolves data hazards.
@@ -11,47 +13,42 @@ A simulator that shows how instructions move through a CPU pipeline stage by sta
 
 ## Circuit Diagram
 
-![Pipeline Circuit Diagram](
+![Pipeline Circuit Diagram](Circuit diagram.png)
+
+## Output Video
+
+Click to watch the demo video:
+
+[▶️ Watch Output Video](Outputvideo.mp4)
 
 ## Technologies Used
 
 - Language: C++
-- Tools: [your compiler or IDE, e.g. Code::Blocks / VS Code / Dev-C++]
+- Tools: Code::Blocks / VS Code / Dev-C++
 
 ## Project Structure
 
-```
 Pipeline-Visualizer/
-├── SRC.CPP        Source code
-├── CIRC.PNG       Circuit diagram
-├── OP1.PNG        Output screenshot 1
-├── OP2.PNG        Output screenshot 2
-├── OP3.PNG        Output screenshot 3
-├── Project_Report.pdf
-└── README.md
-```
+├── SRC.CPP              Source code
+├── Circuit diagram.png  Circuit diagram
+├── Outputvideo.mp4      Output demo video
+└── README.md            Project description
 
 ## How to Run
 
 1. Download or clone this repository.
 2. Open a terminal in the project folder.
 3. Compile the program:
-   ```
-   g++ SRC.CPP -o pipeline
-   ```
+g++ SRC.CPP -o pipeline
 4. Run it:
-   ```
-   ./pipeline
-   ```
+./pipeline
    (On Windows, use `pipeline.exe`.)
 
 ## Sample Input
 
-```
 ADD R1, R2, R3
 SUB R4, R1, R5
 AND R6, R1, R7
-```
 
 ## Sample Output
 
@@ -66,3 +63,4 @@ The full project report is available here: [Project Report](Project_Report.pdf)
 - **Name:** T Padma Loshini
 - **Reg. No:** 1250110121195
 - **Class:** II-B.Tech CSE, "B" Section
+
